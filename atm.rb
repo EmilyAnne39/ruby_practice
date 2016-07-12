@@ -1,5 +1,5 @@
 class Account
-    def initialize (name, balance, pin)
+    def initialize(name, balance, pin)
       @name = name
       @balance = balance
       @pin = pin
@@ -29,7 +29,7 @@ class Account
       @deposit
     end
     def pin_error
-      puts "access denied incorrect pin"
+      puts "access denied incorrect: pin"
       @pin_error
     end
 end
