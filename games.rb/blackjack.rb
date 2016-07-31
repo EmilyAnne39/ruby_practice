@@ -34,13 +34,13 @@ class Deck #this class describes the deck we'll use to get our cards
     (2..10).each do |number|
       cards << Card.new(suit, number) #this stores and shuffles the card that will be created into the array built above
   end
+  end
+  end
   
   ["J", "Q","K", "A"].each do |facecard|
     cards << Card.new(suit,facecard)
   end
-end
   cards.shuffle
-  end
 
 
 class Hand
@@ -63,8 +63,6 @@ class Hand
     hit!(deck) #WTF does the exclamation point do?
     play_as_dealer #this allows us to keep hitting if we want more cards
     end
-    end
-  end
 end   
  
   class Game
@@ -104,9 +102,7 @@ end
       else
         :dealer
       end
-      end
   end
-end 
 
   def inspect #what is the inspect method?
     status
@@ -213,7 +209,7 @@ describe Hand do
     2.times {hand.hit!(:deck)}
     hand.value.should eq([club4, diamond7])
   end
-end 
+end
   describe "#play_as_dealer" do #what does the hash sign do here?
     it "should hit below 16" do
       deck = mock(:deck, :cards => [Card.new(:clubs, 4), Card.new(:diamonds, 4), Card.new(:clubs, 2), Card.new(:hearts, 6)]) #I think this allows for many hits? #WTF is 'mock' I don't get this line much

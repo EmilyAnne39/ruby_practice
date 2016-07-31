@@ -1,0 +1,18 @@
+For Hangman:
+
+First we established the elements of the game:  how it is played and the types of classes we potentially needed.
+*Remember to think through EVERY aspect of the game.
+-The game has to start
+-The game needs two players and a way to select a word
+-The game needs a way to filter through letters to see if those letters match the word
+-if they don't match, what happens?
+-if they do match, what happens?
+-the game needs a way to assign body parts when a letter is guesssed incorrectly
+-the game needs a way to filter through those body parts
+-if a word is guessed wrong, what happens to the body parts
+-if a word is guessed correctly, what happens to the body parts?
+-the game needs to display for the guessing player how many 'blanks' are left or filled
+-the game needs to alert a player to keep guessing
+-the game needs to determine how a player loses
+
+Each of these scenarios needs a defined method that can be called when certain things happen within the game
